@@ -1,0 +1,9 @@
+#Level 10
+
+1)To list the files of the current dirrectory use the command
+    ls
+2)To find the line which is preceded by several ‘=’ characters use the command
+    data.txt |grep '=='
+3)From which we will get the password for the next level
+4)Now login to the server and type the password 
+    ssh bandit10@bandit.labs.overthewire.org -p 2220
