@@ -1,0 +1,9 @@
+#Level 11
+
+1)To list the file in the current directory use the command
+    ls
+2)To decode the contents of the file data.txt use the command 
+    cat data.txt | base64 --d
+3)From which we will get the password for the next level
+4)Now login to the server and enter the password
+    ssh bandit11@bandit.labs.ovethewire.org -p 2220
