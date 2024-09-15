@@ -5,4 +5,5 @@
 2) To read the file with spaces in the file name we use the command 
     cat "spaces in this filename"
 3) From which we will get the password for the next level
-4) Now login to the 
+4) Now login to the server and type the password
+        ssh bandit3@bandit.labs.overthewire.org -p 2220
