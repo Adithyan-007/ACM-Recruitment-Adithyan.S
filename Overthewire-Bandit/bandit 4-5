@@ -1,0 +1,15 @@
+#Level 5
+
+1) To open the inhere directory we use the command
+    cd inhere
+2) To list the files in the current directory we use the command 
+    ls 
+3) To check if the file is human readable we can use the command 
+    file ./-filename
+4) Check the type of every single file and we get that -file07 is in ASCII format which is human readable
+5) Now read the contents of the file named file07 by using the command 
+    cat ./-file07
+6) we will get the password for the next level
+7) Now login to the server and type the paswword 
+    ssh bandit5@bandit.labs.overthewire.org -p 2220
+
