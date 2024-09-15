@@ -1,1 +1,6 @@
+#Level 0
 
+1) For connecting the server we use the command 
+    ssh bandit0@bandit.overthewire.org -p 2220
+2) Now type the password given for the level 
+    bandit0
