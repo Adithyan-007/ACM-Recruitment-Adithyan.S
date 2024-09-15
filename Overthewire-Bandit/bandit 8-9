@@ -6,3 +6,4 @@
     sort data.txt | uniq -c
 3)From whcih we will get the password for the next level
 4)Now login to the server and enter the password
+    ssh bandit9@bandit.labs.overthewire.org -p 2220
