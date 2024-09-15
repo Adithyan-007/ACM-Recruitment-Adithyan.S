@@ -1,0 +1,13 @@
+#Level 6
+
+1) To list all the directory use the command 
+    ls
+2) To open the inhere directory use the command
+    cd inhere
+3) To find the file in the current directory with human readable format, 1033 bytes,not executable use the command
+    find -type f -size 1033c -readable ! -executable
+4) Now open  the file named file2 using the command
+    cat .file2
+5) From whcih we will get the password for the next level
+6) Now login to the server and type the password
+    ssh bandit6@bandit.labs.overthwire.org -p 2220
