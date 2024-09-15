@@ -1,0 +1,13 @@
+#Level 4
+
+1)To list the directories we use the command 
+    ls
+2)To open the directory named inhere we use the command 
+    cd inhere
+3)To list all the files including the hidden files we use the command 
+    ls -a 
+4)Now for reading the file we use the command 
+    cat ..Hiding from you
+5)From which we will get the password for the next level
+6) Now login to the server and type the password
+        ssh bandit4@bandit.labs.overthewire.org -p 2220
