@@ -1,0 +1,7 @@
+#Level 2
+
+1) To list the files in the current directory we use the command 
+    ls 
+2) To read the contents of the - file we need to use the command 
+    cat ./-
+3) 
