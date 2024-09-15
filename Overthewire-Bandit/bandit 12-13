@@ -1,0 +1,40 @@
+#Level 13
+
+1)To list the files in the current directory use the command
+    ls
+2)To open the /tmp directory use the command
+    cd /tmp
+3)To create temp directory use the command
+    mkdir acm 
+4)To open the directory named ACM use the command
+    cd acm
+5)To copy the file data.txt from the home directory to acm directory use the command
+    cp ~data.txt
+6)To convert the data from hexdump and revere it and store it in a new file called new1 use the command
+    xxd -r data.txt new1
+7)When we check the type of the file name new1 it is a gzip file format
+8)To change the format use the command 
+    mv new1 new1.gz
+9)To decompress the file use the command 
+    gzip -d new1.gz
+10)When we check the type of the file name new1 it is a bzip2 fie format
+11)To change the format use the command
+    mv new1 new1.bz2
+12)To decompress the file use the command
+    bzip2 -d new.bz2
+13)When we check the type of the file name new1 it is a gzip file format
+14)To change the format use the command 
+    mv new1 new1.gz
+15)To decompress the file use the command 
+    gzip -d new1.gz
+16)When we check the type of the file name new1 it is a tar file format
+17)To change the format use the command
+    mv new1 new1.tar
+18)To decompress the file use the command
+    tar -xf new.tar
+19)Keep on decompressing unltil we gat a ASCII file foramt
+20)To read the contents of the file use the command 
+    cat data8
+21)From which we can get the password for the next level
+22)Now login to the server and enter the password
+    ssh bandit13@bandit.labs.overthewire.org -p 2220
