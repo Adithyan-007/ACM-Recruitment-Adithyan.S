@@ -1,0 +1,9 @@
+#Level 12
+
+1)To list the files in the given directory use the command 
+    ls
+2)To decode the data in the file data.txt in which all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions use the command
+    cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+3)From which e will get the password for the next level 
+4)Now login to the server and enter the password
+    ssh bandit12@bandit.labs.overthewire.org -p 2220
