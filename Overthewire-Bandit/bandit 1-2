@@ -5,4 +5,5 @@
 2) To read the contents of the - file we need to use the command 
     cat ./-
 3) From which we will get the password for the next level
-4) 
+4) Now login to the sever and type the passord
+        ssh bandit2@bandit.labs.overthewire.org -p 2220
