@@ -1,0 +1,8 @@
+#Level 9
+
+1)To list all the files in the current directory use the command 
+    ls
+2)To find the only line of text that occurs only once use the command
+    sort data.txt | uniq -c
+3)From whcih we will get the password for the next level
+4)Now login to the server and enter the password
