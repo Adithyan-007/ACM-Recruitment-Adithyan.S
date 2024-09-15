@@ -1,0 +1,9 @@
+#Level 1
+
+1) For listing the files in the current diectory we use the command
+    ls
+2) For reading the contents of the readme file we use the command 
+    cat readme
+3) From which we will get the password fo the current level
+4) Now loggin to the sever and type the current level password
+    ssh bandit1@bandit.labs.overthewire.org -p 2220
