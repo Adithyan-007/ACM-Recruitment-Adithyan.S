@@ -1,0 +1,8 @@
+#Level 3
+
+1) To list the files of the current directory we use the command 
+    ls
+2) To read the file with spaces in the file name we use the command 
+    cat "spaces in this filename"
+3) From which we will get the password for the next level
+4) Now login to the 
