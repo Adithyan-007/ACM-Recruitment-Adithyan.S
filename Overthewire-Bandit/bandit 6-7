@@ -1,0 +1,10 @@
+#Level 7
+
+1)To find a file with the properties ;owned by user bandit7 ,owned by group bandit6,33 bytes in size use the comman
+    find /-size 33c -user bandit7 -group bandit6 
+2)To open the file use the command 
+    cat ./var/lib/dpkg/info/bandit7.password
+3)From that we will get the password for the next level
+4)Now login to the sever and type the password 
+    shh bandit7@bandit.labs.overthewire.org -p 2220
+    
