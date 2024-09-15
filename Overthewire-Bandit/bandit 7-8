@@ -1,0 +1,9 @@
+#Level 8
+
+1)To list all the files in the directory use the command
+    ls
+2)To get the word next to the millionth use the command
+    grep millionth data.txt
+3)From which we will get the password for the next level
+4)Now login to the server and type the password 
+    ssh bandit8@bandit.labs.overthewire.org -p 2220
