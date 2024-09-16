@@ -1,0 +1,7 @@
+#Level 15
+
+1)To connect to the local host at port 30000 use the command
+     telnet localhost 30000
+2)Enter the password of the current level and we will get the password for the next level
+3)Now login to the serrver and enter the password
+    ssh.bandit15@bandit.labs.overthewire.org -p 2220
