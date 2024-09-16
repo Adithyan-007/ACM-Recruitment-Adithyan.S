@@ -1,0 +1,11 @@
+#Level 20
+
+1)To list the files in the current directry use the command
+    ls
+2)To check the file type of  bandit20-do use the command
+    file bandit20-do
+3)Since it is a 32-bit file we use the command
+    ./bandit20-do cat /etc/bandit_pass/bandit20
+4)Enter the password for the current level and we will get the password for the next level
+5)Now login to the server and enter the password for the next level
+    ssh bandit20@bandit.labs.overthewire.org -p 2220
