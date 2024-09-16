@@ -1,0 +1,9 @@
+#Level 19
+
+1)To list the files in the current directory use the command 
+    ls
+2)To connect to the server and read the readme file use the command
+    ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat ~/readme"
+3)Enter the passwor forr the current level and we will ge tthe password for the next level
+4)Now login to the erver and enter the password
+    ssh bandit19@bandit.labs.overthewire.org -p 2220
