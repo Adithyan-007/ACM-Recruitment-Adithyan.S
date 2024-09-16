@@ -1,0 +1,9 @@
+#Level 18
+
+1)To list the files in the current directory use the command
+    ls
+2)To check which password changed use the command 
+    diff passwords.old passwords.new 
+3)From which we will get the pasword for the next level
+4)Now login to the server and enter the password
+    ssh bandit18@bandit.labs.overthewire.org -p 2220
