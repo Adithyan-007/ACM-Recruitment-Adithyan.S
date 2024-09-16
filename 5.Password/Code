@@ -1,0 +1,26 @@
+p=input("ENTER THE PASSWORD :")
+c=0
+l=list(p)
+if len(l)==8:
+    c=c+1
+for i in p:
+    if i in "!@#$%^&*()~_+":
+        c=c+1
+f=p[0]
+if f.isalpha():
+    c=c+1
+password=["A1b#C=cD3e","Xy4$Zz7!","P@ssw0rd","M!n3e4L^","T7r$eN8f"]
+if p not in password:
+    c=c+1
+for i in p:
+    if i.isupper():
+        c=c+1
+        break
+for i in p:
+    if i.islower():
+        c=c+1
+        break
+if c==6:
+    print("PASSWORD IS VALID")
+else:
+    print("PASSWORD IS NOT VALID")
