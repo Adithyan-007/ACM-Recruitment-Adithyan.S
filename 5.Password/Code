@@ -6,6 +6,7 @@ if len(l)==8:
 for i in p:
     if i in "!@#$%^&*()~_+":
         c=c+1
+        break
 f=p[0]
 if f.isalpha():
     c=c+1
