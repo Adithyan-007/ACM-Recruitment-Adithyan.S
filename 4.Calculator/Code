@@ -1,1 +1,88 @@
+import re
+import sys
+x=input('ENTER THE MATHEMATICAL EXPRESSION :')
+y=re.findall('(\d+|[-+*^/]+|[()]+)',x)
+def precidence(l):
+    if "^" in l:
+        index=l.index("^")
+        exponential(index,l)
+    elif "*" in l:
+        index=l.index("*")
+        multiplication(index,l)
+    elif "/"in l:
+        index=l.index("/")
+        division(index,l)
+    elif "-"in l:
+        index=l.index("-")
+        subtraction(index,l)
+    elif "+" in l:
+        index=l.index("+")
+        addition(index,l)
+    return l
 
+def exponential(index,l):
+    a=float(l[index-1])
+    b=float(l[index+1])
+    ans=a**b
+    l[index-1]=ans
+    del l[index+1]
+    del l[index]
+    return l
+
+def multiplication(index,l):
+    a=float(l[index-1])
+    b=float(l[index+1])
+    ans=a*b
+    l[index-1]=ans
+    del l[index+1]
+    del l[index]
+    print(l)
+
+def division(index,l):
+    a=float(l[index-1])
+    b=float(l[index+1])
+    try:
+        ans=a/b
+        l[index-1]=ans
+        del l[index+1]
+        del l[index]
+        return l
+    except ZeroDivisionError:
+        print("CANNOT DIVIDE BY ZERO")
+        print("ZERO DIVISION ERROR")
+        sys.exit()
+    
+def addition(index,l):
+    a=float(l[index-1])
+    b=float(l[index+1])
+    ans=a+b
+    l[index-1]=ans
+    del l[index+1]
+    del l[index]
+    return l
+
+def subtraction(index,l):
+    a=float(l[index-1])
+    b=float(l[index+1])
+    ans=a-b
+    l[index-1]=ans
+    del l[index+1]
+    del l[index]
+    return l
+
+def paranthesis():
+    global y
+    a=y.index("(")
+    b=y.index(")")
+    z=y[a+1:b]
+    for i in range(b,a,-1):
+        del y[i]
+    while len(z)>1:
+        f=precidence(z)
+    y[a]=f[0]
+    
+while len(y)>1:
+    if "(" in y:
+        paranthesis()
+    precidence(y)
+print(y[0])
