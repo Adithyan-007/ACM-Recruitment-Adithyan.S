@@ -1,0 +1,7 @@
+#Level 16
+
+1)To connect to the local host at port 30001 use the command
+    openssl s_client -connect localhost:30001
+2)Type the password of the current level and we will get the password for the next level
+3)Now login to the server and type the password
+    ssh bandit16@bandit.labs.overthewire.org -p 2220
