@@ -1,0 +1,12 @@
+x=9699690
+while True:
+    y=1
+    s=0
+    while y<=20:
+        if x%y==0:
+            s=s+1
+        y=y+1
+    if s==20:
+        print(x)
+        break
+    x=x+9699690
