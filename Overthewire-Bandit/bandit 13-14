@@ -1,0 +1,13 @@
+#Level 14
+
+1)To find the sshkey.private use the command
+    ls
+2)To read the contents of the sshkey.private use the command
+    cat sshkey.private
+3)To connect to the server bandit 14 with the command
+    ssh -i sshkey.private bandit14@localhost -p 2220
+4)Now read the contents of the file using the command
+    cat  /etc/bandit_pass/bandit14
+5)From which we will get the password for the next level
+6)Now login to the server and enter the password
+    ssh bandit14@bandit.labs.overthewire.org -p 2220
