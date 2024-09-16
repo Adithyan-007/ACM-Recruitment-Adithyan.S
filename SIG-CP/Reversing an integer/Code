@@ -1,0 +1,7 @@
+num=int(input("ENTER THE NUMBER:"))
+rev=0
+while num>0:
+    rem=num%10
+    num=num//10
+    rev=rev*10+rem
+print("REVER OF THE NUMBER IS",rev)
