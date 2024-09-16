@@ -1,0 +1,88 @@
+1.	Given binary number is 1100101011110010
+
+2.	1100101011110010 AND 1010110010101101  ==1000100010100000
+    1000100010100000 OR 0111001100110011     ==1111101110110011
+    1111101110110011 XOR 1101110111001110  ==0010011001111101
+    NOT 0010011001111101 ==1101100110000010
+
+3.	CONVERTING 1101100110000010 TO DECIMAL WE GET 55682
+    55682+123=55805
+    55805*7=390635
+    CONVERTING 390635 INTO BINARY WE GET 1011111010111101011
+
+4.	COVERING ALL THE BINARY NUMBERS TO DECIMAL
+
+    1001 -----9
+    1100 -----12
+    1110 -----14
+    1010 -----10
+    0111 -----7
+    0101 -----5
+    0011 -----3
+    1111 -----15
+    1101 -----13
+    1011 -----11
+    0110 -----6
+    0100 -----4
+    0010 -----2
+    0001 -----1
+	  The unknown number is 8 (1000)
+5.	Let 0 represents Left and 1 represents Right
+    So the path is RIGHT -> LEFT ->RIGHT ->RIGHT ->RIGHT
+
+6.	Given      10101011010100101110
+    1st move 11111111010100101110
+    2nd move 11111111111110101110
+    3rd move 11111111111111111111 
+    
+    SO MINIMUM NUMBER OF MOVES=3
+
+7.	GIVEN 1011011101
+    The reverse of the given no: is 1011101101 
+    Given no: is not equal to the reverse of the no: so the binary no: is not palindrome
+    1st flip 1011001101
+    The reverse of this no: is 1011001101
+    Here the no: is equal to the reversed no: so the binary no: is a palindrome
+
+    No: of step =1
+
+    Binary no:=1011001101
+
+8.	binary=int(input("ENTER THE 10-BIT BINARY NUMBER : "))
+    bi=binary
+    c=[]
+    for i in range(10):
+        rem=bi%10
+        c.append(rem)
+        bi=bi//10
+    print(c)
+    if c.count(1)==4 and len(c)==10:
+        decimal=0
+        count=0
+        while binary>0:
+            rem=binary%10
+            binary=binary//10
+            decimal=decimal+rem*2**count
+            count=count+1
+        print(decimal)
+    else:
+        print("INVALID BINARY NUMBER")
+
+9.	101010 XOR 011011  110001
+    011011 XOR 110100  101111
+    011011 XOR 100110  111101
+    110100 XOR 001101  111001
+    001101 XOR 100110  101011
+
+    So the two numbers in the array whose XOR gives the maximum result is 111101 and the pair is 011011  and 100110
+
+10.	Given binary number =1101010
+    To check if it is divisible by 7 ,
+    First convert the binary number into decimal
+    Decimal number =106
+    Since 106 is not divisible by 7 ,hence 1101010 is not divisible by 7
+
+    The final binary number obtained by completing all the steps from 1 to 3 is 1011111010111101011
+    Converting 1011111010111101011 to decimal , we get 390635
+    THE FINAL RESULT IS 390635 * 5 = 1953175
+ 
