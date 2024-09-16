@@ -1,0 +1,17 @@
+a=100
+s=0
+while a<1000:
+    b=100
+    while b<1000:
+        f=a*b
+        c=f
+        m=0
+        while c>0:
+            r=c%10
+            c=c//10
+            m=m*10+r
+        if f==m and f>s:
+            s=f
+        b=b+1
+    a=a+1
+print("THE LARGEST PALINDROME MADE FROM THE PRODUCT OF TWO 3-DIGIT NUMBER IS ",s)
