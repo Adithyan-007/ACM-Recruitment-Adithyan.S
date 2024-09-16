@@ -1,0 +1,3 @@
+x=input("ENTER THE STRING ")
+reverse=x[::-1]
+print("REVERSE OF THE STRING IS",reverse)
