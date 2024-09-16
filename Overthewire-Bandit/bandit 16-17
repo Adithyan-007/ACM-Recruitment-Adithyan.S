@@ -1,0 +1,9 @@
+#Level 17
+
+1)To find which ports are open  use the command 
+    nmap -sV -T4 -p 31000-32000
+2)To connect to the localhost at port 31790 use the command
+    openssl s_client connect localhost:31790
+3)Enter the password of the current level and we will get the password for the next level
+4)Now login to the server and enter the password
+    ssh bandit17@bandit.labs.overthewire.org -p 2220
