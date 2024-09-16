@@ -1,0 +1,93 @@
+import random
+import sys
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+gameplay = True
+cplayer = "x"
+winner = " "
+
+
+def playboard(board):
+    print(board[0]+" | "+board[1]+" | "+board[2])
+    print("---------")
+    print(board[3]+" | "+board[4]+" | "+board[5])
+    print("---------")
+    print(board[6]+" | "+board[7]+" | "+board[8])
+    
+
+def inputboard(board):
+    global cplayer
+    if cplayer == "x":
+        number = int(input("ENTER THE NUMBER FROM 1 TO 9: "))
+        print("X TURN")
+        if board[number - 1] == " ":
+            board[number - 1] = cplayer
+            cplayer = "y"
+        else:
+            print("INVALID MOVE")
+            sys.exit()
+    elif cplayer == "y":
+        print("Y TURN")
+        computerboard(board)
+        cplayer = "x"
+
+
+def winnerboard(board):
+    global winner
+    if board[0]==board[1]==board[2] and board[0]!=' ':
+        winner=board[0]
+        return True
+    elif board[0]==board[4]==board[8] and board[0]!=" ":
+        winner=board[0]
+        return True
+    elif board[0]==board[3]==board[6] and board[0]!=" ":
+        winner=board[0]
+        return True
+    elif board[1]==board[4]==board[7] and board[1]!=" ":
+        winner=board[1]
+        return True
+    elif board[2]==board[5]==board[8] and board[2]!=" ":
+        winner=board[2]
+        return True
+    elif board[3]==board[4]==board[5] and board[3]!=" ":
+        winner=board[0]
+        return True
+    elif board[6]==board[7]==board[8] and board[6]!=" ":
+        winner=board[6]
+        return True
+    elif board[2]==board[4]==board[6] and board[2]!=" ":
+        winner=board[2]
+        return True
+    else:
+        return False
+
+def tieboard(board):
+    global winner
+    if " " not in board and winner == " ":
+        winner = "Tie"
+        return True
+    else:
+        return False
+
+
+def computerboard(board):
+    while cplayer == "y":
+        ra = random.randint(0, 8)
+        if board[ra] == " ":
+            board[ra] = "y"
+            break
+
+
+def maingame():
+    global gameplay
+    while gameplay:
+        playboard(board)
+        inputboard(board)
+        if winnerboard(board):
+            playboard(board)
+            print("THE WINNER IS",winner)
+            gameplay = False
+        elif tieboard(board):
+            playboard(board)
+            print("It's a Tie!")
+            gameplay = False
+maingame()
