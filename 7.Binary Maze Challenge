@@ -82,7 +82,7 @@
     Decimal number =106
     Since 106 is not divisible by 7 ,hence 1101010 is not divisible by 7
 
-    The final binary number obtained by completing all the steps from 1 to 3 is 1011111010111101011
-    Converting 1011111010111101011 to decimal , we get 390635
-    THE FINAL RESULT IS 390635 * 5 = 1953175
+    The final binary number obtained by completing all the steps from 1 to 3 is 1101010
+    Converting 1101010 to decimal , we get 106
+    THE FINAL RESULT IS 390635 * 5 = 530
  
